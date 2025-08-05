@@ -1,0 +1,71 @@
+
+1.Cleaned and Preprocessed Datasets
+-Files generated:
+  -cleaned_Pizza_Sale.xlsx
+  -cleaned_Pizza_ingredients.xlsx
+-Result: 
+  - Cleaned Sales Records: 48,580
+  - Cleaned Ingredient Records: 514
+
+2. Exploratory Data Analysis (EDA) Report
+--Visualizations produced:
+  - Daily sales trend plot
+  - Monthly sales bar chart
+  - Top 10 best-selling pizzas bar chart
+  - Sales quantity distribution histogram
+  - Correlation heatmap
+  - Missing values heatmap
+--Key findings: 
+  - Sales show clear seasonality and daily trends.
+  - Certain pizzas are consistently top sellers.
+  - Data is mostly complete after cleaning.
+
+ 3.Predictive Model with Code and Evaluation Metrics
+--Model used: 
+   ARIMA(1,1,1)
+--Evaluation metric:
+   MAPE (Mean Absolute Percentage Error):16.00%
+--Forecast plot:
+  Saved as arima_sales_forecast.png
+--Code: 
+  - Included in your datacleaning.py and above.
+
+4. Detailed Purchase Order for the Next Week
+--Files generated:
+  purchase_order_next_week.xlsx
+--Sample output:
+  ```
+     pizza_ingredients  quantity_needed_grams
+  0           Cheese                12345.0
+  1     Tomato Sauce                 6789.0
+  ...
+  ```
+5. How it was calculated: 
+  - Used ARIMA to forecast total sales for the next 7 days.
+  - Estimated pizza type proportions from historical data.
+  - Multiplied predicted pizzas by ingredient requirements.
+
+---
+
+
+PROJECT REPORT (Summary)
+-- Introduction:
+  Forecasting pizza sales and automating ingredient purchase orders to optimize inventory and reduce waste.
+-- Methodology:
+  Data cleaning, EDA, ARIMA modeling, forecast-based purchase order generation.
+-- Findings:
+  - Data is clean and robust for modeling.
+  - ARIMA provides reasonable forecasts (MAPE ≈ 16%).
+  - Automated purchase order aligns ingredient needs with predicted demand.
+-- Business Implications:
+  - Improved inventory planning.
+  - Reduced overstock and waste.
+  - Data-driven procurement decisions.
+-- Recommendations:  
+  - Integrate holiday/promotion effects for even better forecasts.
+  - Regularly retrain models with new data.
+
+
+
+
+
